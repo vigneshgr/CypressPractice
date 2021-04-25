@@ -4,11 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/cypress run",
+    "headTest": "npm run test --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "cypressVideoDash": " npm run test --headed --record --key 8070f9ff-f5fa-4e35-864e-a3a36b3533b4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   },
   "author": "vignesh",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.8.0"
+    "@types/lodash": "^4.14.168",
+    "cypress": "^6.8.0",
+    "cypress-cucumber-preprocessor": "^4.1.0",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
-}
+ }

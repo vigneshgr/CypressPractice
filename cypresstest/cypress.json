@@ -1,5 +1,17 @@
 {
     "modifyObstructiveCode": true,
-        "experimentalSourceRewriting": true
-
+        "experimentalSourceRewriting": true,
+        "chromeWebSecurity": false,
+        "defaultCommandTimeout":6000,
+        "projectId": "bkkjm9",
+        "reporter":"mochawesome",
+        "testFiles": "**/*.feature",
+        "env":
+        {
+            "url": "https://rahulshettyacademy.com/angularpractice/",
+            "cignaurl":"https://my.cigna.com/"
+        },
+        "retries":{
+            "runMode":1
+        }
 }
